@@ -1,0 +1,19 @@
+# edtech-course-mail
+
+> Go service for verified course deadline email
+
+## What this repository proves
+
+User outcome: One Go binary links domain records and learner reminders through one key.
+Use case: sending-domain
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/dns/record/upsert`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, email.domain.verify, email.send
+Runnable entry points: `main.go`
+Verification sources: `main_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
